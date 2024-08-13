@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap 5 Tutorial</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Bootstrap 5 Tutorial</header>
+            <ul>
+                <li><a class="nav-link" href="#what_is_bootstrap">What is Bootstrap</a></li>
+                <li><a class="nav-link" href="#bootstrap_versions">Bootstrap Versions</a></li>
+                <li><a class="nav-link" href="#why_use_bootstrap">Why Use Bootstrap</a></li>
+                <li><a class="nav-link" href="#where_to_get_bootstrap_5">Where to Get Bootstrap 5</a></li>
+                <li><a class="nav-link" href="#bootstrap_5_cdn">Bootstrap 5 CDN</a></li>
+                <li><a class="nav-link" href="#downloading_bootstrap_5">Downloading Bootstrap 5</a></li>
+                <li><a class="nav-link" href="#create_your_first_web_page_with_bootstrap_5">Create Your First Web Page with Bootstrap 5</a></li>
+                <li><a class="nav-link" href="#js_components">JS Components</a></li>
+                <li><a class="nav-link" href="#environment_setup">Environment Setup</a></li>
+                <li><a class="nav-link" href="#compiled_css_and_js">Compiled CSS and JS</a></li>
+                <li><a class="nav-link" href="#cdn_via_jsdelivr">CDN via jsDelivr</a></li>
+                <li><a class="nav-link" href="#requirements">Requirements</a></li>
+                <li><a class="nav-link" href="#root_variables">Root Variables</a></li>
+                <li><a class="nav-link" href="#component_variables">Component Variables</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="what_is_bootstrap">
+                <header>What is Bootstrap</header>
+                <article>
+                    <ul>
+                        <li>Bootstrap is a free front-end framework for faster and easier web development</li>
+                        <li>Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins</li>
+                        <li>Bootstrap also gives you the ability to easily create responsive designs</li>
+                    </ul>
+                    <div class="container-1">
+                        <h4>What is Responsive Web Design?</h4>
+                        <p>Responsive web design is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="main-section" id="bootstrap_versions">
+                <header>Bootstrap Versions</header>
+                <article>
+                    <p>Bootstrap 5 (released 2021) is the newest version of Bootstrap (released 2013); with new components, faster stylesheet and more responsiveness.</p>
+                    <p>Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However, Internet Explorer 11 and down is not supported.</p>
+                    <p>The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to vanilla JavaScript instead of jQuery.</p>
+                </article>
+            </section>
+            <section class="main-section" id="why_use_bootstrap">
+                <header>Why Use Bootstrap</header>
+                <article>
+                    <p>Advantages of Bootstrap:</p>
+                    <ul>
+                        <li>Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap</li>
+                        <li>Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops</li>
+                        <li>Mobile-first approach: In Bootstrap, mobile-first styles are part of the core framework</li>
+                        <li>Browser compatibility: Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox, Edge, Safari, and Opera).</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="where_to_get_bootstrap_5">
+                <header>Where to Get Bootstrap 5</header>
+                <article>
+                    <p>There are two ways to start using Bootstrap 5 on your own web site.</p>
+                    <p>You can:</p>
+                    <ul>
+                        <li>Include Bootstrap 5 from a CDN</li>
+                        <li>Download Bootstrap 5 from getbootstrap.com</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main-section" id="bootstrap_5_cdn">
+                <header>Bootstrap 5 CDN</header>
+                <article>
+                    <p>If you don't want to download and host Bootstrap 5 yourself, you can include it from a CDN (Content Delivery Network).<br>
+                        jsDelivr provides CDN support for Bootstrap's CSS and JavaScript:</p>
+                    <pre><code>
+                        &lt;!-- Latest compiled and minified CSS --&gt;
+                        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+                        &lt;!-- Latest compiled JavaScript --&gt;
+                        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                    </code></pre>
+                    <br>
+                    <div class="container-1">
+                        <h4>One advantage of using the Bootstrap 5 CDN:</h4>
+                        <p>Many users already have downloaded Bootstrap 5 from jsDelivr when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.</p>
+                        <h4>JavaScript?</h4>
+                        <p>Bootstrap 5 uses JavaScript for different components (like modals, tooltips, popovers etc). However, if you just use the CSS part of Bootstrap, you don't need them.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="main-section" id="downloading_bootstrap_5">
+                <header>Downloading Bootstrap 5</header>
+                <article>
+                    <p>If you want to download and host Bootstrap 5 yourself, go to <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a>, and follow the instructions there.</p>
+                </article>
+            </section>
+            <section class="main-section" id="create_your_first_web_page_with_bootstrap_5">
+                <header>Create Your First Web Page with Bootstrap 5</header>
+                <article>
+                    <p><strong>1. Add the HTML5 doctype</strong></p>
+                    <p>Bootstrap 5 uses HTML elements and CSS properties that require the HTML5 doctype.</p>
+                    <p>Always include the HTML5 doctype at the beginning of the page, along with the lang attribute and the correct title and character set:</p>
+                    <pre><code>
+                        &lt;html&gt;
+                            &lt;head&gt;
+                                &lt;title&gt;Example&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                &lt;p&gt;This is an example of converting &lt; and &gt; signs.&lt;/p&gt;
+                            &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code></pre>
+                    <p><strong>2. Bootstrap 5 is mobile-first</strong></p>
+                    <p>Bootstrap 5 is designed to be responsive to mobile devices. Mobile-first styles are part of the core framework.</p>
+                    <p>To ensure proper rendering and touch zooming, add the following tag inside the &lt;head&gt; element:</p>
+                    <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
+                    <p>The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).</p>
+                    <p>The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.</p>
+                    <p><strong>3. Containers</strong></p>
+                    <p>Bootstrap 5 also requires a containing element to wrap site contents.</p>
+                    <p>There are two container classes to choose from:</p>
+                    <ol>
+                        <li>The <strong>.container</strong> class is responsive and has fixed width.</li>
+                        <li>The <strong>.container-fluid</strong> class is always 100% wide.</li>
+                    </ol>
+                    <p>Each of these classes has its own max-width:</p>
+                    <ul>
+                        <li>.container: Fixed width containers</li>
+                        <li>.container-fluid: 100% width containers</li>
+                    </ul>
+                    <p>Example of a fixed-width container:</p>
+                    <pre><code>
+                        &lt;div class="container"&gt;
+                            &lt;!-- Content here --&gt;
+                        &lt;/div&gt;
+                    </code></pre>
+                    <p>Example of a fluid-width container:</p>
+                    <pre><code>
+                        &lt;div class="container-fluid"&gt;
+                            &lt;!-- Content here --&gt;
+                        &lt;/div&gt;
+                    </code></pre>
+                </article>
+            </section>
+            <section class="main-section" id="js_components">
+                <header>JS Components</header>
+                <article>
+                    <p>Bootstrap's JavaScript components rely on jQuery.</p>
+                    <p>However, Bootstrap 5 removed jQuery dependency and now uses plain JavaScript.</p>
+                </article>
+            </section>
+            <section class="main-section" id="environment_setup">
+                <header>Environment Setup</header>
+                <article>
+                    <p>To start using Bootstrap 5, you need a basic HTML file.</p>
+                    <p>In your HTML file, add Bootstrap’s CSS and JS links to the head and body respectively:</p>
+                    <pre><code>
+                        &lt;head&gt;
+                            &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                        &lt;/body&gt;
+                    </code></pre>
+                </article>
+            </section>
+            <section class="main-section" id="compiled_css_and_js">
+                <header>Compiled CSS and JS</header>
+                <article>
+                    <p>Bootstrap's compiled CSS and JavaScript files are hosted on jsDelivr and can be included via a CDN:</p>
+                    <pre><code>
+                        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+                        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                    </code></pre>
+                </article>
+            </section>
+            <section class="main-section" id="cdn_via_jsdelivr">
+                <header>CDN via jsDelivr</header>
+                <article>
+                    <p>To include Bootstrap 5 via jsDelivr, add the following links to your HTML file:</p>
+                    <pre><code>
+                        &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+                        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                    </code></pre>
+                </article>
+            </section>
+            <section class="main-section" id="requirements">
+                <header>Requirements</header>
+                <article>
+                    <p>Bootstrap 5 requires a modern browser.</p>
+                    <p>Older browsers may not fully support Bootstrap 5 features.</p>
+                </article>
+            </section>
+            <section class="main-section" id="root_variables">
+                <header>Root Variables</header>
+                <article>
+                    <p>Bootstrap 5 includes CSS root variables for customization.</p>
+                    <p>These variables can be used to override Bootstrap's default values.</p>
+                </article>
+            </section>
+            <section class="main-section" id="component_variables">
+                <header>Component Variables</header>
+                <article>
+                    <p>Bootstrap 5 allows customization of component-specific variables.</p>
+                    <p>These variables can be adjusted to fit your design needs.</p>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>

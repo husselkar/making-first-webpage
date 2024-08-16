@@ -1,108 +1,104 @@
-html,body{
+html,
+body {
   min-width: 290px;
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
-.container-1{
-border:none;
-position: relative;
-border-radius: 10px;
-margin: 20px 10px 20px 10px;
-padding:10px;
-font-size: small;
-background-color: aliceblue;
-
+.container-1 {
+  border: none;
+  position: relative;
+  border-radius: 10px;
+  margin: 20px 10px 20px 10px;
+  padding: 10px;
+  font-size: small;
+  background-color: aliceblue;
 }
 .container-2 {
-display: block;
-overflow-y:auto;
-overflow-x: auto;
-max-width: 600px;
-min-height: 30px;
-max-height: 500px;
-background-color: aliceblue;
-box-sizing: border-box;
-text-align: left;
-white-space:pre-line;
-border-radius: 10px;
-margin:0;
-padding: 10px 20px 10px 20px;
+  display: block;
+  overflow-y: auto;
+  overflow-x: auto;
+  max-width: 600px;
+  min-height: 30px;
+  max-height: 500px;
+  background-color: aliceblue;
+  box-sizing: border-box;
+  text-align: left;
+  white-space: pre-line;
+  border-radius: 10px;
+  margin: 0;
+  padding: 10px 20px 10px 20px;
 }
 
-pre{
-margin: 0;
-padding: 0;
-
+pre {
+  margin: 0;
+  padding: 0;
 }
-table, td, th {
-border: 1px solid aliceblue;
-padding: 10px;
+table,
+td,
+th {
+  border: 1px solid aliceblue;
+  padding: 10px;
 }
-table{
-position: relative;
-display:table;
-border: 5px solid aliceblue;
-border-radius: 10px;
-text-align: center;
-border-collapse: collapse;
-width:100%;
-min-width:fit-content
+table {
+  position: relative;
+  display: table;
+  border: 5px solid aliceblue;
+  border-radius: 10px;
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+  min-width: fit-content;
 }
-#navbar{
+#navbar {
   position: fixed;
   min-width: 290px;
- 
-  top:0;
-  left:0;
+
+  top: 0;
+  left: 0;
   width: 300px;
   height: 100%;
   border-right: solid;
   border-color: aliceblue;
 }
-.main-section{
+.main-section {
   padding: 10px;
-
 }
-#main-doc{
+#main-doc {
   position: absolute;
   margin-left: 310px;
   padding: 20px;
   margin-bottom: 110px;
-
 }
-nav header{
+nav header {
   color: black;
   text-align: center;
   margin: 10px;
   font-size: 1.8em;
-  font-weight:500;
-  
+  font-weight: 500;
 }
-#navbar a{
-  display:block;
-  text-decoration:none;
+#navbar a {
+  display: block;
+  text-decoration: none;
   padding: 10px 30px;
   cursor: pointer;
   color: black;
-
 }
-#navbar ul{
+#navbar ul {
   padding: 0;
-  height:88%;
+  height: 88%;
   overflow-y: auto;
   overflow-x: hidden;
   border-top: 2px solid aliceblue;
-
 }
-#navbar li{
+#navbar li {
   border-bottom: 2px aliceblue solid;
-  list-style:none;
+  list-style: none;
   position: relative;
   width: 100%;
-  text-align:left;
+  text-align: left;
 }
-#main-doc header{
+#main-doc header {
   text-align: left;
   margin: 0;
   font-size: 30px;
@@ -110,10 +106,9 @@ nav header{
 
 section li {
   margin: 15px 0px 0px 20px;
-
 }
-section article{
-  margin:15px;
+section article {
+  margin: 15px;
   font-size: 0.96em;
 }
 code {

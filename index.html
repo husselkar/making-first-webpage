@@ -1,110 +1,132 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bootstrap 5 Tutorial</title>
-    </head>
-    <body>
-        <nav id="navbar">
-            <header>Bootstrap 5 Tutorial</header>
-            <ul>
-                <li><a class="nav-link" href="#what_is_bootstrap">What is Bootstrap</a></li>
-                <li><a class="nav-link" href="#bootstrap_versions">Bootstrap Versions</a></li>
-                <li><a class="nav-link" href="#why_use_bootstrap">Why Use Bootstrap</a></li>
-                <li><a class="nav-link" href="#where_to_get_bootstrap_5">Where to Get Bootstrap 5</a></li>
-                <li><a class="nav-link" href="#bootstrap_5_cdn">Bootstrap 5 CDN</a></li>
-                <li><a class="nav-link" href="#downloading_bootstrap_5">Downloading Bootstrap 5</a></li>
-                <li><a class="nav-link" href="#create_your_first_web_page_with_bootstrap_5">Create Your First Web Page with Bootstrap 5</a></li>
-                <li><a class="nav-link" href="#js_components">JS Components</a></li>
-                <li><a class="nav-link" href="#environment_setup">Environment Setup</a></li>
-                <li><a class="nav-link" href="#compiled_css_and_js">Compiled CSS and JS</a></li>
-                <li><a class="nav-link" href="#cdn_via_jsdelivr">CDN via jsDelivr</a></li>
-                <li><a class="nav-link" href="#requirements">Requirements</a></li>
-                <li><a class="nav-link" href="#root_variables">Root Variables</a></li>
-                <li><a class="nav-link" href="#component_variables">Component Variables</a></li>
-            </ul>
-        </nav>
-        <main id="main-doc">
-            <section class="main-section" id="what_is_bootstrap">
-                <header>What is Bootstrap</header>
-                <article>
-                    <ul>
-                        <li>Bootstrap is a free front-end framework for faster and easier web development</li>
-                        <li>Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins</li>
-                        <li>Bootstrap also gives you the ability to easily create responsive designs</li>
-                    </ul>
-                    <div class="container-1">
-                        <h4>What is Responsive Web Design?</h4>
-                        <p>Responsive web design is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops.</p>
-                    </div>
-                </article>
-            </section>
-            <section class="main-section" id="bootstrap_versions">
-                <header>Bootstrap Versions</header>
-                <article>
-                    <p>Bootstrap 5 (released 2021) is the newest version of Bootstrap (released 2013); with new components, faster stylesheet and more responsiveness.</p>
-                    <p>Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However, Internet Explorer 11 and down is not supported.</p>
-                    <p>The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to vanilla JavaScript instead of jQuery.</p>
-                </article>
-            </section>
-            <section class="main-section" id="why_use_bootstrap">
-                <header>Why Use Bootstrap</header>
-                <article>
-                    <p>Advantages of Bootstrap:</p>
-                    <ul>
-                        <li>Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap</li>
-                        <li>Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops</li>
-                        <li>Mobile-first approach: In Bootstrap, mobile-first styles are part of the core framework</li>
-                        <li>Browser compatibility: Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox, Edge, Safari, and Opera).</li>
-                    </ul>
-                </article>
-            </section>
-            <section class="main-section" id="where_to_get_bootstrap_5">
-                <header>Where to Get Bootstrap 5</header>
-                <article>
-                    <p>There are two ways to start using Bootstrap 5 on your own web site.</p>
-                    <p>You can:</p>
-                    <ul>
-                        <li>Include Bootstrap 5 from a CDN</li>
-                        <li>Download Bootstrap 5 from getbootstrap.com</li>
-                    </ul>
-                </article>
-            </section>
-            <section class="main-section" id="bootstrap_5_cdn">
-                <header>Bootstrap 5 CDN</header>
-                <article>
-                    <p>If you don't want to download and host Bootstrap 5 yourself, you can include it from a CDN (Content Delivery Network).<br>
-                        jsDelivr provides CDN support for Bootstrap's CSS and JavaScript:</p>
-                    <pre><code>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Tutorial</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Bootstrap 5 Tutorial</header>
+        <ul>
+            <li><a class="nav-link" href="#what_is_bootstrap">What is Bootstrap</a></li>
+            <li><a class="nav-link" href="#bootstrap_versions">Bootstrap Versions</a></li>
+            <li><a class="nav-link" href="#why_use_bootstrap">Why Use Bootstrap</a></li>
+            <li><a class="nav-link" href="#where_to_get_bootstrap_5">Where to Get Bootstrap 5</a></li>
+            <li><a class="nav-link" href="#bootstrap_5_cdn">Bootstrap 5 CDN</a></li>
+            <li><a class="nav-link" href="#downloading_bootstrap_5">Downloading Bootstrap 5</a></li>
+            <li><a class="nav-link" href="#create_your_first_web_page_with_bootstrap_5">Create Your First Web Page with
+                    Bootstrap 5</a></li>
+            <li><a class="nav-link" href="#js_components">JS Components</a></li>
+            <li><a class="nav-link" href="#environment_setup">Environment Setup</a></li>
+            <li><a class="nav-link" href="#compiled_css_and_js">Compiled CSS and JS</a></li>
+            <li><a class="nav-link" href="#cdn_via_jsdelivr">CDN via jsDelivr</a></li>
+            <li><a class="nav-link" href="#package_manager">Package Manager</a></li>
+            <li><a class="nav-link" href="#requirements">Requirements</a></li>
+            <li><a class="nav-link" href="#variables">CSS Variables</a></li>
+            <li><a class="nav-link" href="#default_variables">Default Variables</a></li>
+            <li><a class="nav-link" href="#dark_mode_variables">Dark mode Variables</a></li>
+            <li><a class="nav-link" href="#root_variables">Root Variables</a></li>
+            <li><a class="nav-link" href="#component_variables">Component Variables</a></li>
+            <li><a class="nav-link" href="#prefix">Prefix</a></li>
+            <li><a class="nav-link" href="#focus_variables">Focus Variables</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="what_is_bootstrap">
+            <header>What is Bootstrap</header>
+            <article>
+                <ul>
+                    <li>Bootstrap is a free front-end framework for faster and easier web development</li>
+                    <li>Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables,
+                        navigation, modals, image carousels and many other, as well as optional JavaScript plugins</li>
+                    <li>Bootstrap also gives you the ability to easily create responsive designs</li>
+                </ul>
+                <div class="container-1">
+                    <h4>What is Responsive Web Design?</h4>
+                    <p>Responsive web design is about creating web sites which automatically adjust themselves to look
+                        good on all devices, from small phones to large desktops.</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="bootstrap_versions">
+            <header>Bootstrap Versions</header>
+            <article>
+                <p>Bootstrap 5 (released 2021) is the newest version of Bootstrap (released 2013); with new components,
+                    faster stylesheet and more responsiveness.</p>
+                <p>Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However,
+                    Internet Explorer 11 and down is not supported.</p>
+                <p>The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to
+                    vanilla JavaScript instead of jQuery.</p>
+            </article>
+        </section>
+        <section class="main-section" id="why_use_bootstrap">
+            <header>Why Use Bootstrap</header>
+            <article>
+                <p>Advantages of Bootstrap:</p>
+                <ul>
+                    <li>Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap</li>
+                    <li>Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops</li>
+                    <li>Mobile-first approach: In Bootstrap, mobile-first styles are part of the core framework</li>
+                    <li>Browser compatibility: Bootstrap 5 is compatible with all modern browsers (Chrome, Firefox,
+                        Edge, Safari, and Opera).</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="where_to_get_bootstrap_5">
+            <header>Where to Get Bootstrap 5</header>
+            <article>
+                <p>There are two ways to start using Bootstrap 5 on your own web site.</p>
+                <p>You can:</p>
+                <ul>
+                    <li>Include Bootstrap 5 from a CDN</li>
+                    <li>Download Bootstrap 5 from getbootstrap.com</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="bootstrap_5_cdn">
+            <header>Bootstrap 5 CDN</header>
+            <article>
+                <p>If you don't want to download and host Bootstrap 5 yourself, you can include it from a CDN (Content
+                    Delivery Network).<br>
+                    jsDelivr provides CDN support for Bootstrap's CSS and JavaScript:</p>
+                <pre><code>
                         &lt;!-- Latest compiled and minified CSS --&gt;
                         &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
                         &lt;!-- Latest compiled JavaScript --&gt;
                         &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
                     </code></pre>
-                    <br>
-                    <div class="container-1">
-                        <h4>One advantage of using the Bootstrap 5 CDN:</h4>
-                        <p>Many users already have downloaded Bootstrap 5 from jsDelivr when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.</p>
-                        <h4>JavaScript?</h4>
-                        <p>Bootstrap 5 uses JavaScript for different components (like modals, tooltips, popovers etc). However, if you just use the CSS part of Bootstrap, you don't need them.</p>
-                    </div>
-                </article>
-            </section>
-            <section class="main-section" id="downloading_bootstrap_5">
-                <header>Downloading Bootstrap 5</header>
-                <article>
-                    <p>If you want to download and host Bootstrap 5 yourself, go to <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a>, and follow the instructions there.</p>
-                </article>
-            </section>
-            <section class="main-section" id="create_your_first_web_page_with_bootstrap_5">
-                <header>Create Your First Web Page with Bootstrap 5</header>
-                <article>
-                    <p><strong>1. Add the HTML5 doctype</strong></p>
-                    <p>Bootstrap 5 uses HTML elements and CSS properties that require the HTML5 doctype.</p>
-                    <p>Always include the HTML5 doctype at the beginning of the page, along with the lang attribute and the correct title and character set:</p>
-                    <pre><code>
+                <br>
+                <div class="container-1">
+                    <h4>One advantage of using the Bootstrap 5 CDN:</h4>
+                    <p>Many users already have downloaded Bootstrap 5 from jsDelivr when visiting another site. As a
+                        result, it will be loaded from cache when they visit your site, which leads to faster loading
+                        time. Also, most CDN's will make sure that once a user requests a file from it, it will be
+                        served from the server closest to them, which also leads to faster loading time.</p>
+                    <h4>JavaScript?</h4>
+                    <p>Bootstrap 5 uses JavaScript for different components (like modals, tooltips, popovers etc).
+                        However, if you just use the CSS part of Bootstrap, you don't need them.</p>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="downloading_bootstrap_5">
+            <header>Downloading Bootstrap 5</header>
+            <article>
+                <p>If you want to download and host Bootstrap 5 yourself, go to <a href="https://getbootstrap.com/"
+                        target="_blank">https://getbootstrap.com/</a>, and follow the instructions there.</p>
+            </article>
+        </section>
+        <section class="main-section" id="create_your_first_web_page_with_bootstrap_5">
+            <header>Create Your First Web Page with Bootstrap 5</header>
+            <article>
+                <p><strong>1. Add the HTML5 doctype</strong></p>
+                <p>Bootstrap 5 uses HTML elements and CSS properties that require the HTML5 doctype.</p>
+                <p>Always include the HTML5 doctype at the beginning of the page, along with the lang attribute and the
+                    correct title and character set:</p>
+                <pre><code>
                         &lt;html&gt;
                             &lt;head&gt;
                                 &lt;title&gt;Example&lt;/title&gt;
@@ -114,51 +136,55 @@
                             &lt;/body&gt;
                         &lt;/html&gt;
                     </code></pre>
-                    <p><strong>2. Bootstrap 5 is mobile-first</strong></p>
-                    <p>Bootstrap 5 is designed to be responsive to mobile devices. Mobile-first styles are part of the core framework.</p>
-                    <p>To ensure proper rendering and touch zooming, add the following tag inside the &lt;head&gt; element:</p>
-                    <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
-                    <p>The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).</p>
-                    <p>The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.</p>
-                    <p><strong>3. Containers</strong></p>
-                    <p>Bootstrap 5 also requires a containing element to wrap site contents.</p>
-                    <p>There are two container classes to choose from:</p>
-                    <ol>
-                        <li>The <strong>.container</strong> class is responsive and has fixed width.</li>
-                        <li>The <strong>.container-fluid</strong> class is always 100% wide.</li>
-                    </ol>
-                    <p>Each of these classes has its own max-width:</p>
-                    <ul>
-                        <li>.container: Fixed width containers</li>
-                        <li>.container-fluid: 100% width containers</li>
-                    </ul>
-                    <p>Example of a fixed-width container:</p>
-                    <pre><code>
+                <p><strong>2. Bootstrap 5 is mobile-first</strong></p>
+                <p>Bootstrap 5 is designed to be responsive to mobile devices. Mobile-first styles are part of the core
+                    framework.</p>
+                <p>To ensure proper rendering and touch zooming, add the following tag inside the &lt;head&gt; element:
+                </p>
+                <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
+                <p>The width=device-width part sets the width of the page to follow the screen-width of the device
+                    (which will vary depending on the device).</p>
+                <p>The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.
+                </p>
+                <p><strong>3. Containers</strong></p>
+                <p>Bootstrap 5 also requires a containing element to wrap site contents.</p>
+                <p>There are two container classes to choose from:</p>
+                <ol>
+                    <li>The <strong>.container</strong> class is responsive and has fixed width.</li>
+                    <li>The <strong>.container-fluid</strong> class is always 100% wide.</li>
+                </ol>
+                <p>Each of these classes has its own max-width:</p>
+                <ul>
+                    <li>.container: Fixed width containers</li>
+                    <li>.container-fluid: 100% width containers</li>
+                </ul>
+                <p>Example of a fixed-width container:</p>
+                <pre><code>
                         &lt;div class="container"&gt;
                             &lt;!-- Content here --&gt;
                         &lt;/div&gt;
                     </code></pre>
-                    <p>Example of a fluid-width container:</p>
-                    <pre><code>
+                <p>Example of a fluid-width container:</p>
+                <pre><code>
                         &lt;div class="container-fluid"&gt;
                             &lt;!-- Content here --&gt;
                         &lt;/div&gt;
                     </code></pre>
-                </article>
-            </section>
-            <section class="main-section" id="js_components">
-                <header>JS Components</header>
-                <article>
-                    <p>Bootstrap's JavaScript components rely on jQuery.</p>
-                    <p>However, Bootstrap 5 removed jQuery dependency and now uses plain JavaScript.</p>
-                </article>
-            </section>
-            <section class="main-section" id="environment_setup">
-                <header>Environment Setup</header>
-                <article>
-                    <p>To start using Bootstrap 5, you need a basic HTML file.</p>
-                    <p>In your HTML file, add Bootstrap’s CSS and JS links to the head and body respectively:</p>
-                    <pre><code>
+            </article>
+        </section>
+        <section class="main-section" id="js_components">
+            <header>JS Components</header>
+            <article>
+                <p>Bootstrap's JavaScript components rely on jQuery.</p>
+                <p>However, Bootstrap 5 removed jQuery dependency and now uses plain JavaScript.</p>
+            </article>
+        </section>
+        <section class="main-section" id="environment_setup">
+            <header>Environment Setup</header>
+            <article>
+                <p>To start using Bootstrap 5, you need a basic HTML file.</p>
+                <p>In your HTML file, add Bootstrap’s CSS and JS links to the head and body respectively:</p>
+                <pre><code>
                         &lt;head&gt;
                             &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
                         &lt;/head&gt;
@@ -166,49 +192,372 @@
                             &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
                         &lt;/body&gt;
                     </code></pre>
-                </article>
-            </section>
-            <section class="main-section" id="compiled_css_and_js">
-                <header>Compiled CSS and JS</header>
-                <article>
-                    <p>Bootstrap's compiled CSS and JavaScript files are hosted on jsDelivr and can be included via a CDN:</p>
-                    <pre><code>
+            </article>
+        </section>
+        <section class="main-section" id="compiled_css_and_js">
+            <header>Compiled CSS and JS</header>
+            <article>
+                <p>Bootstrap's compiled CSS and JavaScript files are hosted on jsDelivr and can be included via a CDN:
+                </p>
+                <pre><code>
                         &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
                         &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
                     </code></pre>
-                </article>
-            </section>
-            <section class="main-section" id="cdn_via_jsdelivr">
-                <header>CDN via jsDelivr</header>
-                <article>
-                    <p>To include Bootstrap 5 via jsDelivr, add the following links to your HTML file:</p>
-                    <pre><code>
+            </article>
+        </section>
+        <section class="main-section" id="cdn_via_jsdelivr">
+            <header>CDN via jsDelivr</header>
+            <article>
+                <p>To include Bootstrap 5 via jsDelivr, add the following links to your HTML file:</p>
+                <pre><code>
                         &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
                         &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
                     </code></pre>
-                </article>
-            </section>
-            <section class="main-section" id="requirements">
-                <header>Requirements</header>
-                <article>
-                    <p>Bootstrap 5 requires a modern browser.</p>
-                    <p>Older browsers may not fully support Bootstrap 5 features.</p>
-                </article>
-            </section>
-            <section class="main-section" id="root_variables">
-                <header>Root Variables</header>
-                <article>
-                    <p>Bootstrap 5 includes CSS root variables for customization.</p>
-                    <p>These variables can be used to override Bootstrap's default values.</p>
-                </article>
-            </section>
-            <section class="main-section" id="component_variables">
-                <header>Component Variables</header>
-                <article>
-                    <p>Bootstrap 5 allows customization of component-specific variables.</p>
-                    <p>These variables can be adjusted to fit your design needs.</p>
-                </article>
-            </section>
-        </main>
-    </body>
+            </article>
+        </section>
+        <section class="main-section" id="package_manager">
+            <header>Package manager</header>
+            <article>
+                <p>We can also install Bootstrap into the local system using Package Manager. Let's see the commands to
+                    install Bootstrap.</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Package Manager</th>
+                            <th>Description</th>
+                            <th>commands to install</th>
+                        </tr>
+                        <tr>
+                            <td>npm</td>
+                            <td>Install Bootstrap in your Node.js powered apps with the npm package:</td>
+                            <td>$ npm install bootstrap@5.3.0</td>
+                        </tr>
+                        <tr>
+                            <td>yarn</td>
+                            <td>Install Bootstrap in your Node.js powered apps with the yarn package:</td>
+                            <td>$ yarn add bootstrap@5.3.0</td>
+                        </tr>
+                        <tr>
+                            <td>RubyGems</td>
+                            <td>Install Bootstrap in your Ruby apps using Bundler (recommended) and RubyGems by adding
+                                the following line to your Gemfile:</td>
+                            <td>gem 'bootstrap', '~> 5.3.0'
+                                OR
+                                $ gem install bootstrap -v 5.3.0</td>
+                        </tr>
+                        <tr>
+                            <td>Composer</td>
+                            <td>You can also install and manage Bootstrap’s Sass and JavaScript using Composer:</td>
+                            <td>$ composer require twbs/bootstrap:5.3.0
+                                NuGet If you develop in .NET Framework, you can also install and manage Bootstrap’s CSS
+                                or Sass and JavaScript using NuGet. Step1: PM> Install-Package bootstrap
+                                Step2: PM> Install-Package bootstrap.sass
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>NuGet</td>
+                            <td>If you develop in .NET Framework, you can also install and manage Bootstrap’s CSS or
+                                Sass and JavaScript using NuGet.</td>
+                            <td>Step1: PM> Install-Package bootstrap
+                                Step2: PM> Install-Package bootstrap.sass
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <section class="main-section" id="requirements">
+            <header>Requirements</header>
+            <article>
+                <p>Bootstrap 5 requires a modern browser.</p>
+                <p>Older browsers may not fully support Bootstrap 5 features.</p>
+                <p>To enable RTL in pages powered by Bootstrap, you must fulfill the two requirements. They are as
+                    follows:</p>
+                <div class="container-1">
+                    <ul>
+                        <li>On html element, set dir-"rtl".</li>
+                        <li>On html element, add an appropriate lang attribute, such as lang="ar".</li>
+
+                    </ul>
+
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="variables">
+            <header>CSS Variables</header>
+            <article>
+                <p>The compiled CSS of Bootstrap consists of a plethora of CSS custom properties (variables) that allow
+                    for instant customization without the need to recompile Sass, wherein commonly used values such as
+                    theme colors, breakpoints, and primary font stacks are easily accessible during browser inspection,
+                    code sandbox operation, or general prototyping.</p>
+                <p>All the custom variables provided by Bootstrap are prefixed with bs-, so that there is no conflict
+                    with any other third-party CSS.</p>
+            </article>
+        </section>
+        <section class="main-section" id="default_variables">
+            <header>Default Variables</header>
+            <article>
+                <p>The CSS variables that are accessible everywhere, irrespective of the color mode, are the default
+                    variables.</p>
+                <pre>
+                <div class="container-2">
+                        " :root,
+                        [data-bs-theme=light] {
+                        --bs-blue: #0d6efd; 
+                        --bs-indigo: #6610f2;
+                        --bs-purple: #6f42c1;
+                        --bs-pink: #d63384;
+                        --bs-red: #dc3545;
+                        --bs-orange: #fd7e14;
+                        --bs-yellow: #ffc107;
+                        --bs-green: #198754;
+                        --bs-teal: #20c997;
+                        --bs-cyan: #0dcaf0;
+                        --bs-black: #000;
+                        --bs-white: #fff;
+                        --bs-gray: #6c757d;
+                        --bs-gray-dark: #343a40;
+                        --bs-gray-100: #f8f9fa;
+                        --bs-gray-200: #e9ecef;
+                        --bs-gray-300: #dee2e6;
+                        --bs-gray-400: #ced4da;
+                        --bs-gray-500: #adb5bd;
+                        --bs-gray-600: #6c757d;
+                        --bs-gray-700: #495057;
+                        --bs-gray-800: #343a40;
+                        --bs-gray-900: #212529;
+                        --bs-primary: #0d6efd;
+                        --bs-secondary: #6c757d;
+                        --bs-success: #198754;
+                        --bs-info: #0dcaf0;
+                        --bs-warning: #ffc107;
+                        --bs-danger: #dc3545;
+                        --bs-light: #f8f9fa;
+                        --bs-dark: #212529;
+                        --bs-primary-rgb: 13, 110, 253;
+                        --bs-secondary-rgb: 108, 117, 125;
+                        --bs-success-rgb: 25, 135, 84;
+                        --bs-info-rgb: 13, 202, 240;
+                        --bs-warning-rgb: 255, 193, 7;
+                        --bs-danger-rgb: 220, 53, 69;
+                        --bs-light-rgb: 248, 249, 250;
+                        --bs-dark-rgb: 33, 37, 41;
+                        --bs-primary-text-emphasis: #052c65;
+                        --bs-secondary-text-emphasis: #2b2f32;
+                        --bs-success-text-emphasis: #0a3622;
+                        --bs-info-text-emphasis: #055160;
+                        --bs-warning-text-emphasis: #664d03;
+                        --bs-danger-text-emphasis: #58151c;
+                        --bs-light-text-emphasis: #495057;
+                        --bs-dark-text-emphasis: #495057;
+                        --bs-primary-bg-subtle: #cfe2ff;
+                        --bs-secondary-bg-subtle: #e2e3e5;
+                        --bs-success-bg-subtle: #d1e7dd;
+                        --bs-info-bg-subtle: #cff4fc;
+                        --bs-warning-bg-subtle: #fff3cd;
+                        --bs-danger-bg-subtle: #f8d7da;
+                        --bs-light-bg-subtle: #fcfcfd;
+                        --bs-dark-bg-subtle: #ced4da;
+                        --bs-primary-border-subtle: #9ec5fe;
+                        --bs-secondary-border-subtle: #c4c8cb;
+                        --bs-success-border-subtle: #a3cfbb;
+                        --bs-info-border-subtle: #9eeaf9;
+                        --bs-warning-border-subtle: #ffe69c;
+                        --bs-danger-border-subtle: #f1aeb5;
+                        --bs-light-border-subtle: #e9ecef;
+                        --bs-dark-border-subtle: #adb5bd;
+                        --bs-white-rgb: 255, 255, 255;
+                        --bs-black-rgb: 0, 0, 0;
+                        --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                        --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+                        --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+                        --bs-body-font-family: var(--bs-font-sans-serif);
+                        --bs-body-font-size: 1rem;
+                        --bs-body-font-weight: 400;
+                        --bs-body-line-height: 1.5;
+                        --bs-body-color: #212529;
+                        --bs-body-color-rgb: 33, 37, 41;
+                        --bs-body-bg: #fff;
+                        --bs-body-bg-rgb: 255, 255, 255;
+                        --bs-emphasis-color: #000;
+                        --bs-emphasis-color-rgb: 0, 0, 0;
+                        --bs-secondary-color: rgba(33, 37, 41, 0.75);
+                        --bs-secondary-color-rgb: 33, 37, 41;
+                        --bs-secondary-bg: #e9ecef;
+                        --bs-secondary-bg-rgb: 233, 236, 239;
+                        --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+                        --bs-tertiary-color-rgb: 33, 37, 41;
+                        --bs-tertiary-bg: #f8f9fa;
+                        --bs-tertiary-bg-rgb: 248, 249, 250;
+                        --bs-heading-color: inherit;
+                        --bs-link-color: #0d6efd;
+                        --bs-link-color-rgb: 13, 110, 253;
+                        --bs-link-decoration: underline;
+                        --bs-link-hover-color: #0a58ca;
+                        --bs-link-hover-color-rgb: 10, 88, 202;
+                        --bs-code-color: #d63384;
+                        --bs-highlight-bg: #fff3cd;
+                        --bs-border-width: 1px;
+                        --bs-border-style: solid;
+                        --bs-border-color: #dee2e6;
+                        --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+                        --bs-border-radius: 0.375rem;
+                        --bs-border-radius-sm: 0.25rem;
+                        --bs-border-radius-lg: 0.5rem;
+                        --bs-border-radius-xl: 1rem;
+                        --bs-border-radius-xxl: 2rem;
+                        --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+                        --bs-border-radius-pill: 50rem;
+                        --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                        --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+                        --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+                        --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+                        --bs-focus-ring-width: 0.25rem;
+                        --bs-focus-ring-opacity: 0.25;
+                        --bs-focus-ring-color: rgba(13, 110, 253, 0.25);
+                        --bs-form-valid-color: #198754;
+                        --bs-form-valid-border-color: #198754;
+                        --bs-form-invalid-color: #dc3545;
+                        --bs-form-invalid-border-color: #dc3545;
+                        }"
+                        </div>
+
+                    </pre>
+            </article>
+        </section>
+        <section class="main-section" id="dark_mode_variables">
+            <header>Dark Mode Variables</header>
+            <article>
+                <p>Following variables are limited to the built-in dark mode of Bootstrap:</p>
+                <pre>
+                    <div class="container-2">
+                        "[data-bs-theme=dark] {
+                        color-scheme: dark;
+                        --bs-body-color: #adb5bd;
+                        --bs-body-color-rgb: 173, 181, 189;
+                        --bs-body-bg: #212529;
+                        --bs-body-bg-rgb: 33, 37, 41;
+                        --bs-emphasis-color: #fff;
+                        -bs-emphasis-color-rgb: 255, 255, 255;
+                        --bs-secondary-color: rgba(173, 181, 189, 0.75);
+                        --bs-secondary-color-rgb: 173, 181, 189;
+                        --bs-secondary-bg: #343a40;
+                        --bs-secondary-bg-rgb: 52, 58, 64;
+                        --bs-tertiary-color: rgba(173, 181, 189, 0.5);
+                        --bs-tertiary-color-rgb: 173, 181, 189;
+                        --bs-tertiary-bg: #2b3035;
+                        --bs-tertiary-bg-rgb: 43, 48, 53;
+                        --bs-primary-text-emphasis: #6ea8fe;
+                        --bs-secondary-text-emphasis: #a7acb1;
+                        --bs-success-text-emphasis: #75b798;
+                        --bs-info-text-emphasis: #6edff6;
+                        --bs-warning-text-emphasis: #ffda6a;
+                        --bs-danger-text-emphasis: #ea868f;
+                        --bs-light-text-emphasis: #f8f9fa;
+                        --bs-dark-text-emphasis: #dee2e6;
+                        --bs-primary-bg-subtle: #031633;
+                        --bs-secondary-bg-subtle: #161719;
+                        --bs-success-bg-subtle: #051b11;
+                        --bs-info-bg-subtle: #032830;
+                        --bs-warning-bg-subtle: #332701;
+                        --bs-danger-bg-subtle: #2c0b0e;
+                        --bs-light-bg-subtle: #343a40;
+                        --bs-dark-bg-subtle: #1a1d20;
+                        --bs-primary-border-subtle: #084298;
+                        --bs-secondary-border-subtle: #41464b;
+                        --bs-success-border-subtle: #0f5132;
+                        --bs-info-border-subtle: #087990;
+                        --bs-warning-border-subtle: #997404;
+                        --bs-danger-border-subtle: #842029;
+                        --bs-light-border-subtle: #495057;
+                        --bs-dark-border-subtle: #343a40;
+                        --bs-heading-color: inherit;
+                        --bs-link-color: #6ea8fe;
+                        --bs-link-hover-color: #8bb9fe;
+                        --bs-link-color-rgb: 110, 168, 254;
+                        --bs-link-hover-color-rgb: 139, 185, 254;
+                        --bs-code-color: #e685b5;
+                        --bs-border-color: #495057;
+                        --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
+                        --bs-form-valid-color: #75b798;
+                        --bs-form-valid-border-color: #75b798;
+                        --bs-form-invalid-color: #ea868f;
+                        --bs-form-invalid-border-color: #ea868f;
+                      }"
+
+                    </div>
+                    </pre>
+
+            </article>
+        </section>
+        <section class="main-section" id="root_variables">
+            <header>Root Variables</header>
+            <article>
+                <p>Bootstrap 5 includes CSS root variables for customization.</p>
+                <p>These variables can be used to override Bootstrap's default values.</p>
+            </article>
+        </section>
+        <section class="main-section" id="component_variables">
+            <header>Component Variables</header>
+            <article>
+                <p>Bootstrap 5 allows customization of component-specific variables.</p>
+                <p>These variables can be adjusted to fit your design needs.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Prefix">
+            <header>Prefix</header>
+            <article>
+                <p>A prefix is used with most of the variables, in order to prevent any collisions with your own
+                    codebase. Every CSS variable requires --, apart from the prefix.</p>
+                <p>You can customize the prefix, using the $prefix Sass variable. It is set to bs-, by default.</p>
+                <p><strong>Examples</strong></p>
+                <p>CSS variables provide comparable adaptability to Sass variables; however, there is no requirement for
+                    compilation before transmitting to the browser. As an illustration, we utilize CSS variables to
+                    reset our page's font and link styles:</p>
+                <pre><code>
+                        body {
+                            font: 1rem/1.5 var(--bs-font-monospace);
+                        }
+                        a {
+                            color: var(--bs-red);
+                        }
+                        
+                    </code></pre>
+            </article>
+        </section>
+        <section class="main-section" id="focus_variables">
+            <header>Focus Variables</header>
+            <article>
+                <p>By employing a blend of Sass and CSS variables, Bootstrap enables the provision of personalized
+                    <strong>:focus</strong>styles that can be selectively appended to singular components and elements.
+                    Nevertheless, the overriding of all <strong>:focus</strong> styles across the board is not currently
+                    implemented.
+                </p>
+                <p>Default values can be set in the Sass, that can be customized before compiling.</p>
+                <pre><code>
+                        scss/_variables.scss
+                        $focus-ring-width:      .25rem;
+                        $focus-ring-opacity:    .25;
+                        $focus-ring-color:      rgba($primary, $focus-ring-opacity);
+                        $focus-ring-blur:       0;
+                        $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color;
+                    </code></pre>
+                <p>The variables are subsequently assigned to CSS variables at the :root level, which can be customized
+                    in real-time and feature options for x and y offsets, with their default fallback value being 0.</p>
+                <pre><code>
+                        scss/_root.scss
+                        --#{$prefix}focus-ring-width: #{$focus-ring-width};
+                        --#{$prefix}focus-ring-opacity: #{$focus-ring-opacity};
+                        --#{$prefix}focus-ring-color: #{$focus-ring-color};
+                    </code></pre>
+                <p><strong>Grid breakpoints</strong></p>
+                <p>Grid breakpoints, such as md, lg, xl, xxl are included as CSS variables (except for xs). CSS
+                    variables can not be used in media queries.</p>
+            </article>
+        </section>
+    </main>
+</body>
+
 </html>
